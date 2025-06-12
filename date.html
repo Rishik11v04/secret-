@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For you</title>
+    <title>Document</title>
     <style>
         *{
             margin: 0;
@@ -53,6 +53,10 @@
             margin: 20px;
 
         }
+        .represent{
+            font-size: small;
+            color: #2a1d43;
+        }
 
     </style>
 </head>
@@ -80,10 +84,10 @@
 
             timerElement=document.querySelector('.timer');
 
-            let html=`<span>${days}:</span>
-            <span>${hours}:</span>
-            <span>${minutes}:</span>
-            <span>${seconds}</span>
+            let html=`<span>${days}<span class="represent">days</span>:</span>
+            <span>${hours}<span class="represent">hrs</span>:</span>
+            <span>${minutes}<span class="represent">mins</span>:</span>
+            <span>${seconds}<span class="represent">sec</span></span>
             `
 
             timerElement.innerHTML=html;
